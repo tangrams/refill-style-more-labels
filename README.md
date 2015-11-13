@@ -1,30 +1,30 @@
-# Tangram Refill Style
+# Tangram Refill Style (More Labels)
 
 **Refill** is a classic look and should be your go-to for general mapping applications. Give [OpenStreetMap](http://www.openstreetmap.org/) data a refined basemap skin using the [Tangram](http://github.com/tangrams/tangram) graphics library and Mapzen's versatile [Vector Tiles](https://mapzen.com/projects/vector-tiles/). 
 
 This style is a High Road influenced evolution of the [Traditional](http://tangrams.github.io/tangram/#mapzen,40.70531887544228,-74.0097749233246,16) style [Stamen](http://stamen.com/) created for Mapzen's [Open](https://mapzen.com/blog/we-made-an-app) Android app in 2014. Please use and adapt the open source scene file in your own projects!
 
-**Looking for help?** There is a mini tutorial after the preview image below walking thru [Vector Tiles API key signup](https://github.com/tangrams/refill-style/blob/gh-pages/README.md#sign-up-for-a-vector-tiles-api-key) and [building a Leaflet map](https://github.com/tangrams/refill-style/blob/gh-pages/README.md#building-a-leaflet-map-using-tangram-and-this-scene-file) using Tangram and this repo's scene file.
+**Looking for help?** There is a mini tutorial after the preview image below walking thru [Vector Tiles API key signup](https://github.com/tangrams/refill-style-more-labels/blob/gh-pages/README.md#sign-up-for-a-vector-tiles-api-key) and [building a Leaflet map](https://github.com/tangrams/refill-style-more-labels/blob/gh-pages/README.md#building-a-leaflet-map-using-tangram-and-this-scene-file) using Tangram and this repo's scene file.
 
 ### A family of styles with many flavours
 
 Mapzen offers the Refill style in three flavors:
 
 1. **Default** (this repo) - Full set of labels, including high contrast icons highlighting OpenStreetMap business listing data.
-2. **[Some labels](https://github.com/tangrams/refill-style-some-labels)** - Streets, cities, and water bodies are labeled and some big parks are named only (no icons). No business labels. Good for data visualization overlays that need a to provide some location context.
+2. **[Some labels](https://github.com/tangrams/refill-style)** - Streets, cities, and water bodies are labeled and some big parks are named only (no icons). No business labels. Good for data visualization overlays that need a to provide some location context.
 3. **[No labels](https://github.com/tangrams/refill-style-no-labels)** - Just the lines and polygons, please. 
 
-**Looking for a different style?** We offer a range of styles including [Refill](https://github.com/tangrams/refill) (high contrast black & white cartography) and [Zinc](https://github.com/tangrams/zinc-style) (soft gray cartography). 
+**Looking for a different style?** We offer a range of styles including [Cinnabar](https://github.com/tangrams/cinnabar-style) (colorful classic cartography) and [Zinc](https://github.com/tangrams/zinc-style) (soft gray cartography). 
 
 
-**Live Refill demo:** http://tangrams.github.io/refill-style
+**Live Refill demo:** http://tangrams.github.io/refill-style-more-labels
 
 ![tangram refill style](https://cloud.githubusercontent.com/assets/853051/11080646/c7c6fd26-87ca-11e5-8a04-7316d8721fc4.png)
 
 
 ## Developer resources
 
-**So how do you actually use this stuff?** Tangram styles are called "scenes" and are written in YAML. The scene file (e.g.: [refill-style.yaml](https://github.com/tangrams/refill-style/blob/gh-pages/refill-style.yaml)) requires a vector tile source. To use Mapzen's vector tile service you must first obtain a free developer API key and update your scene file with that key. 
+**So how do you actually use this stuff?** Tangram styles are called "scenes" and are written in YAML. The scene file (e.g.: [refill-style-more-labels.yaml](https://github.com/tangrams/refill-style-more-labels/blob/gh-pages/refill-style-more-labels.yaml)) requires a vector tile source. To use Mapzen's vector tile service you must first obtain a free developer API key and update your scene file with that key. 
 
 ### Sign up for a Mapzen Vector Tiles API key
 
@@ -39,9 +39,9 @@ Mapzen offers the Refill style in three flavors:
 
 Using Tangram and Mapzen's Vector tiles inside the popular [Leaflet](http://leafletjs.com) mapping framework is easy. We'll make it even easier soon to do this via a Leaflet [provider](https://github.com/leaflet-extras/leaflet-providers), but in the meantime...
 
-1. Update your copy of the scene file on [line 450](https://github.com/tangrams/refill-style/blob/gh-pages/refill-style.yaml#L450) to reference the API key you created in Step 3 in the **Sign up** section above. 
+1. Update your copy of the scene file on [line 450](https://github.com/tangrams/refill-style-more-labels/blob/gh-pages/refill-style-more-labels.yaml#L450) to reference the API key you created in Step 3 in the **Sign up** section above. 
 `url:  //vector.mapzen.com/osm/all/{z}/{x}/{y}.topojson?api_key=vector-tiles-{your-api-key-here}`
-2. Reference the [index-demo.html](index-demo.html) file in any of the style repos for how to configure Leaflet with Tangram and the scene file (e.g.: [Refill](http://github.com/tangrams/refill-style)). 
+2. Reference the [index-demo.html](index-demo.html) file in any of the style repos for how to configure Leaflet with Tangram and the scene file (e.g.: [Refill](http://github.com/tangrams/refill-style-more-labels)). 
 3. Looking for a more sophisticated implementation that includes basic search? The main [index.html](index.html) file has a more real world example.
 4. Need help testing your map locally? See the README in each repo.
 5. Wondering where to host your map? Make a public repo on Github (or fork ours!) and enjoy their [GitHub Pages](https://pages.github.com) to github.io magic dance.
