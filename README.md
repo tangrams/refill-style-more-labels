@@ -1,8 +1,8 @@
 # Tangram Refill Style (More Labels)
 
-**Refill** is a classic look and should be your go-to for general mapping applications. Give [OpenStreetMap](http://www.openstreetmap.org/) data a refined basemap skin using the [Tangram](http://github.com/tangrams/tangram) graphics library and Mapzen's versatile [Vector Tiles](https://mapzen.com/projects/vector-tiles/). 
+**Refill** provides a high contrast, black & white basemap useful for data visualization. Give [OpenStreetMap](http://www.openstreetmap.org/) data a refined basemap skin using the [Tangram](http://github.com/tangrams/tangram) graphics library and Mapzen's versatile [Vector Tiles](https://mapzen.com/projects/vector-tiles/). 
 
-This style is a High Road influenced evolution of the [Traditional](http://tangrams.github.io/tangram/#mapzen,40.70531887544228,-74.0097749233246,16) style [Stamen](http://stamen.com/) created for Mapzen's [Open](https://mapzen.com/blog/we-made-an-app) Android app in 2014. Please use and adapt the open source scene file in your own projects!
+Refill is a continuation of the [Toner](http://content.stamen.com/dotspotting_toner_cartography_available_for_download) style Geraldine started at [Stamen](http://stamen.com). With the GL capabilities of Tangram, detailed lines, patterns and building extrusions are further explored and elaborated upon from the previous Toner base-style. Toner was a style created at Stamen as part of their great [CityTracking](http://citytracking.org) project. Please use and adapt the open source scene file in your own projects!
 
 **Looking for help?** There is a mini tutorial after the preview image below walking thru [Vector Tiles API key signup](https://github.com/tangrams/refill-style-more-labels/blob/gh-pages/README.md#sign-up-for-a-vector-tiles-api-key) and [building a Leaflet map](https://github.com/tangrams/refill-style-more-labels/blob/gh-pages/README.md#building-a-leaflet-map-using-tangram-and-this-scene-file) using Tangram and this repo's scene file.
 
