@@ -19,7 +19,7 @@ Mapzen offers the Refill style in three flavors:
 
 **Live Refill demo:** http://tangrams.github.io/refill-style-more-labels
 
-![tangram refill style](https://cloud.githubusercontent.com/assets/853051/11080646/c7c6fd26-87ca-11e5-8a04-7316d8721fc4.png)
+![refill-preview-more-labels](https://cloud.githubusercontent.com/assets/853051/11160179/86f64d26-8a1b-11e5-8939-5c34f69ad895.png)
 
 
 ## Developer resources
