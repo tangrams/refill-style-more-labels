@@ -2783,8 +2783,8 @@ layers:
                     draw:
                         text:
                             visible: false
-                    icons:
-                        size: [[13, 8px], [19, 18px]]
+                        icons:
+                            size: [[13, 8px], [19, 18px]]
 
             # examples of different icons mapped to feature properties
             icons:
