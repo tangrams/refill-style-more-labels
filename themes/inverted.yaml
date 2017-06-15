@@ -1,0 +1,275 @@
+global:
+    # INVERTED
+    black_color:                [1.00,1.00,1.00]
+    dark_color:                 [0.750,0.750,0.750]
+    mid_color:                  [0.500,0.500,0.500]
+    midlight_color:             [0.460,0.460,0.460]
+    light_color:                [0.365,0.365,0.365]
+    lighter_color:              [0.275,0.275,0.275]
+    lightest_color:             [0.220,0.220,0.220]
+    ultralight_color:           [0.195,0.195,0.195]
+    offwhite_color:             [0.175,0.175,0.175]
+    white_color:                [0.00,0.00,0.00]
+    transparent:                [0.800,0.800,0.800,0.250]
+    route_line:                 [0.000,0.500,1.000]
+
+layers:
+    water:
+        draw:
+            waves:
+                color: global.midlight_color
+        later:
+            draw:
+                waves:
+                    color: global.midlight_color
+
+        lakes:
+            draw:
+                waves:
+                    color: global.midlight_color
+
+        other-water-areas:
+            draw:
+                waves:
+                    color: global.midlight_color
+
+        swimming_pool:
+            draw:
+                waves:
+                    color: global.midlight_color
+
+        water-boundary-ocean:
+            draw:
+                coast:
+                    color: global.black_color
+
+        water_boundaries-not-ocean:
+            draw:
+                coast:
+                    color: global.black_color
+            riverbank:
+                draw:
+                    coast:
+                        color: global.black_color
+
+        water-area-labels:
+            ocean-sea-labels:
+                draw:
+                    text-blend-order:
+                        font:
+                            fill: global.lighter_color
+                            stroke: { color: [0.920,0.920,0.920], width: 4 }
+                sea-labels:
+                    draw:
+                        text-blend-order:
+                            font:
+                                fill: global.lighter_color
+                                stroke: { color: [0.920,0.920,0.920], width: 4 }
+            mostly-lakes:
+                default-label-text:
+                    draw:
+                        text-blend-order:
+                            font:
+                                fill: global.lighter_color
+                                stroke: { color: [0.920,0.920,0.920], width: 4 }
+            water-line-labels:
+                draw:
+                    text-blend-order:
+                        font:
+                            fill: global.lighter_color
+                            stroke: { color: [0.920,0.920,0.920], width: 4 }
+
+    roads:
+        pier:
+            draw:
+                lines:
+                    color: global.midlight_color
+                    outline:
+                        color: global.black_color
+
+        railway:
+            draw:
+                railway_dash:
+                    color: global.light_color
+        ferry:
+            draw:
+                lines:
+                    color: global.midlight_color
+
+    landuse:
+        draw:
+            rock:
+                order: global.feature_order
+                visible: false
+
+        parks-and-national-forests-not-national-park:
+            draw:
+                dots:
+                    color: global.lighter_color
+
+        farm:
+            draw:
+                tiny-dots:
+                    color: global.lighter_color
+
+        golf_course:
+            draw:
+                medium-dots:
+                    color: global.ultralight_color
+
+        hospital:
+            draw:
+                medium-dots:
+                    color: global.lighter_color
+
+        recreation_ground:
+            draw:
+                dots-rev-grid:
+                    color: global.lighter_color
+
+        zoo:
+            draw:
+                tiny-dots:
+                    color: global.lighter_color
+
+        school:
+            draw:
+                dots-rev:
+                    color: global.offwhite_color
+
+        playground:
+            draw:
+                dots-rev:
+                    color: global.lighter_color
+
+        parking:
+            draw:
+                horizontal-bars-rev:
+                    color: global.ultralight_color
+
+        pitch:
+            draw:
+                tiny-dots:
+                    color: global.light_color
+                outline:
+                    color: global.lighter_color
+
+        minor-landuse:
+            draw:
+                dots:
+                    color: global.lighter_color
+
+        retaining_wall:
+            draw:
+                lines:
+                    color: global.light_color
+
+    boundaries:
+        country:
+            draw:
+                country-outerline:
+                    color: global.mid_color
+                lines:
+                    color: global.black_color
+
+            country-labels:
+                draw:
+                    text-blend-order:
+                        font:
+                            stroke: { color: global.white_color, width: 4 }
+
+        other_country_boundary_disputed_etc:
+            draw:
+                dashed:
+                    color: global.mid_color
+            disputed:
+                draw:
+                    dashed_big:
+                        color: global.mid_color
+        region:
+            draw:
+                lines:
+                    color: global.light_color
+
+            region-labels:
+                draw:
+                    text-blend-order:
+                        font:
+                            fill: global.white_color
+                            stroke: { color: global.light_color, width: 4 }
+
+    places:
+        region:
+            draw:
+                text-blend-order:
+                    font:
+                        fill: [0.680,0.680,0.680]
+
+    pois:
+        draw:
+            colorized-icons:
+                text:
+                    font:
+                        stroke: { color: global.white_color, width: 6px }
+
+
+styles:
+    waves:
+        shaders:
+            uniforms:
+                u_lighter: global.midlight_color
+                u_lightest: [0.920,0.920,0.920]
+    coast:
+        shaders:
+            defines:
+                OPACITY: 1.0
+
+    dots:
+        shaders:
+            defines:
+                COLOR1: vec3(0.00,0.00,0.00)
+                COLOR2: color.rgb
+
+    pixel-pattern-light:
+        shaders:
+            uniforms:
+                u_tint: [0.095,0.095,0.095]
+
+    pixel-pattern-bright:
+        shaders:
+            uniforms:
+                u_tint: [0.095,0.095,0.095]
+
+    medium-dots:
+        shaders:
+            defines:
+                COLOR1: vec3(0.00,0.00,0.00)
+
+    tiny-dots:
+        shaders:
+            defines:
+                COLOR1: vec3(0.00,0.00,0.00)
+
+    dots-rev:
+        shaders:
+            defines:
+                COLOR1: vec3(0.00,0.00,0.00)
+
+    dots-rev-grid:
+        shaders:
+            defines:
+                COLOR1: vec3(0.00,0.00,0.00)
+
+    horizontal-bars:
+        shaders:
+            defines:
+                COLOR1: vec3(0.00,0.00,0.00)
+
+    horizontal-bars-rev:
+        shaders:
+            defines:
+                COLOR1: vec3(0.00,0.00,0.00)
+
+textures:
+    building-grid:
+        url: ../images/building-grid-hi-contrast3.gif
