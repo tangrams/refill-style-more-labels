@@ -1,3 +1,7 @@
+# WARNING
+
+This repo not maintained, use https://github.com/tangrams/refill-style instead.
+
 # Tangram Refill Style (More Labels)
 
 **Refill** provides a high contrast, black & white basemap useful for data visualization. Give [OpenStreetMap](http://www.openstreetmap.org/) data a refined basemap skin using the [Tangram](http://github.com/tangrams/tangram) graphics library and Mapzen's versatile [Vector Tiles](https://mapzen.com/projects/vector-tiles/). 
